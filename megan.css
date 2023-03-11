@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0b0907;
+    color: whitesmoke;
+}
+
+.pelicula-megan{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .pelicula-megan{
+        flex-direction: row;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+
+.content_description{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+
+    .content_1,
+    .super-content{
+        display: inline-block;
+    }
+    
+    .content_1{
+        width: 50%;
+    }
+
+    .content_description{
+        font-size: 1rem;
+    }
+
+    .super-content{
+        width: 50%;
+        padding-top: 1em;
+        padding-left: 4em;
+        font-size: 1rem;
+    }
+}
+
+.list{
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list__item{
+    padding-bottom: .5em;
+}
+
+.content_4{
+    width: 100%;
+    display: flex;
+    padding: 1em 0em;
+    justify-content: space-around;
+}
+
+
+.volver{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: orange;
+    border: 1px solid orange;
+    padding: .4em 2em;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.online{    
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: .4em;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: red;
+}

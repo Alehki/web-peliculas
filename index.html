@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas de calidad</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item"><a href="#section_1" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="#section_2" class="menu__link">Peliculas</a></li>
+                <li class="menu__item"><a href="#section_3" class="menu__link">Destacadas</a></li>
+                <li class="menu__item"><a href="#section_4" class="menu__link">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section_1" id="section_1">
+            <h1 class="title">¡Las mejores peliculas para disfrutar en familia!</h1>
+            <div class="content-video">
+                <video id="video" class="video" controls loop autoplay muted src="assets/videos/cine.mp4"></video>
+            </div>
+        </section>
+
+        <section class="section_2" id="section_2">
+            <h2 class="title-peliculas">Peliculas</h2>
+            <div class="peliculas">
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/tenemos_un_fantasma.webp" alt="imagen-de-pelicula">
+                    <h2>Tenemos un fantasma</h2>
+                </article>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/colosion_fatal.jpg" alt="imagen-de-pelicula">
+                    <h2>Colision fatal</h2>
+                </article>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/pines.jpg" alt="imagen-de-pelicula">
+                    <h2>Pines</h2>
+                </article>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/la_absoluta.jpg" alt="imagen-de-pelicula">
+                    <h2>La absoluta</h2>
+                </article>
+            </div>
+        </section>
+
+        <section id="section_3">
+            <h2 class="title-peliculas">Destacadas</h2>
+            <div class="peliculas">
+                <a href="megan.html" class="link__megan">
+                    <article class="pelicula">
+                        <img class="pelicula__image" src="assets/images/mean.webp" alt="imagen-de-pelicula">
+                        <h2>Megan</h2>
+                    </article>
+                </a>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/un_vecino_gruñon.webp" alt="imagen-de-pelicula">
+                    <h2>El abismo</h2>
+                </article>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/magio.webp" alt="imagen-de-pelicula">
+                    <h2>Magio</h2>
+                </article>
+                <article class="pelicula">
+                    <img class="pelicula__image" src="assets/images/mandolario.jpg" alt="imagen-de-pelicula">
+                    <h2>Mandolario</h2>
+                </article>
+            </div>
+        </section>
+        <section class="section_4" id="section_4">
+            <h2 class="title-peliculas">Cuentanos que tal</h2>
+            <form class="form">
+                <fieldset>
+                    <input class="input__text" type="text" placeholder="Nombre">
+                    <input class="input__text" type="text" placeholder="Apellido">
+                </fieldset>
+                <fieldset>
+                    <legend>¿Que generos te gustan?</legend>
+                    <label for="terror">Terror</label>
+                    <input id="terror" type="checkbox" name="nivel">
+
+                    <label for="comedia">Comedia</label>
+                    <input id="comedia" type="checkbox" name="nivel">
+
+                    <label for="animado">Animado</label>
+                    <input id="animado" type="checkbox" name="nivel">
+
+                    <label for="otros">Otros</label>
+                    <input id="otros" type="checkbox" name="nivel">
+                </fieldset>
+                <fieldset>
+                    <legend>Edad del usuario</legend>
+                    <label>0 a 13</label>
+                    <input type="radio" name="namee">
+    
+                    <label> 14 a 20</label>
+                    <input type="radio" name="namee">
+    
+                    <label>20 a mas</label>
+                    <input type="radio" name="namee">
+                </fieldset>
+
+                <input class="btn" type="button" value="Enviar todo">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Las imagenes fueron sacadas de <q>https://cinecalidad.run/</q></p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
